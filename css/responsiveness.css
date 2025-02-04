@@ -1,0 +1,36 @@
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(10, 6vw);
+    }
+    
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    .nav-item a {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+.scores-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.scores-table th,
+.scores-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.social-links {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.social-links li {
+    margin: 0.5rem 0;
+}
