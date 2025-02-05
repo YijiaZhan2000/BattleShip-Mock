@@ -1,10 +1,10 @@
 o	What was the most challenging piece of this assignment?  Did you find it easy or challenging to work with HTML and CSS?  How long did this overall assignment take you?
 
-The most challenging aspect was creating a responsive game board that maintained its grid structure and proper cell sizing across different screen sizes. Working with CSS Grid and Flexbox required careful planning to ensure the game boards displayed correctly while keeping ships, hits, and misses aligned. I found HTML relatively straightforward, but CSS required more trial and error. Perfecting the responsive design and styling details required additional time than setting up for the basic structure. It overall takes me 2 days to finish this assignment.
+The most challenging aspect was creating a responsive game board that maintained its grid structure and proper cell sizing across different screen sizes. Working with CSS Grid and Flexbox required careful planning to ensure the game boards displayed correctly while keeping ships, hits, and misses aligned. I found HTML relatively straightforward, but CSS required more trial and error. Perfecting the responsive design and styling details required additional time than setting up for the basic structure. It took me 2 days to finish this assignment.
 
 o	What decisions did you make when you made your site mobile friendly?
 
-For optimization, I made the different sizes and font for display. As I would like my users can tell the difference and grasp the important information as soon as possible. Also, I tried to add some image to engage my users, letting them have a more vivid sense.
+For optimization, I made different sizes and fonts for display. As I would like my users can tell the difference and grasp the important information as soon as possible. Also, I tried to add some image to engage my users, letting them have a more vivid sense.
 
 o	What did you take into account when you developed the design of your website?  Is there anything that you’re particularly proud of?
 
@@ -23,4 +23,4 @@ o	(Optional) If you made any assumptions about this assignment, what are they?
 N/A
 
 
-![image](https://github.com/user-attachments/assets/6f22f2a5-1d95-4583-b032-75602e5f501b)
+![image](https://github.com/user-attachments/assets/4740cccf-f2f8-4e41-bc7d-c93e784fe881)
