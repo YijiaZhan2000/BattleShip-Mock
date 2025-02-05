@@ -1,11 +1,13 @@
+/* Root Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
     --background-color: #ecf0f1;
     --text-color: #2c3e50;
-    --nav-height: 60px;
-}
+    --nav-height: 70px;
+    --nav-height-small: 50px;
 
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,53 +19,79 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding-top: var(--nav-height);
+    transition: padding-top 0.3s ease;
 }
 
+/* Navbar */
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+    height: var(--nav-height);
     background-color: var(--primary-color);
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     z-index: 1000;
     transition: all 0.3s ease;
 }
 
+/* Shrink Navbar on Scroll */
+body:has(:not(.no-scroll)) .navbar {
+    height: var(--nav-height-small);
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+/* Navbar Title */
+.nav-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation List */
 .nav-list {
     display: flex;
-    justify-content: space-around;
     list-style: none;
 }
 
+/* Navigation Links */
 .nav-item a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover Effect */
 .nav-item a:hover {
     background-color: var(--secondary-color);
     border-radius: 4px;
+    transform: scale(1.05);
 }
 
-.active {
+/* Active Page Indicator */
+.nav-item a:focus, 
+.nav-item a:active {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        bottom: 0;
-        top: auto;
-    }
-    
-    body {
-        padding-bottom: var(--nav-height);
-        padding-top: 0;
-    }
-    
-    .nav-list {
         flex-direction: column;
         text-align: center;
+        height: auto;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item a {
+        display: block;
+        padding: 10px;
     }
 }
