@@ -1,36 +1,23 @@
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: repeat(10, 6vw);
-    }
-    
+@media (max-width: 768px) {
     .navbar {
-        padding: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
     .nav-item a {
-        padding: 0.3rem 0.5rem;
-        font-size: 0.9rem;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
     }
-}
 
-.scores-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
-}
+    .boards {
+        grid-template-columns: 1fr;
+    }
 
-.scores-table th,
-.scores-table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.social-links {
-    list-style: none;
-    padding: 1rem 0;
-}
-
-.social-links li {
-    margin: 0.5rem 0;
+    .grid {
+        aspect-ratio: 1;
+    }
 }

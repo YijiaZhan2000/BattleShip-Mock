@@ -1,13 +1,11 @@
-/* Root Variables */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
     --background-color: #ecf0f1;
     --text-color: #2c3e50;
     --nav-height: 70px;
-    --nav-height-small: 50px;
+}
 
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,10 +17,8 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding-top: var(--nav-height);
-    transition: padding-top 0.3s ease;
 }
 
-/* Navbar */
 .navbar {
     position: sticky;
     top: 0;
@@ -34,64 +30,53 @@ body {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
-/* Shrink Navbar on Scroll */
-body:has(:not(.no-scroll)) .navbar {
-    height: var(--nav-height-small);
-    background-color: rgba(44, 62, 80, 0.9);
-}
-
-/* Navbar Title */
-.nav-title {
-    font-size: 1.5rem;
-    color: white;
-    font-weight: bold;
-}
-
-/* Navigation List */
 .nav-list {
     display: flex;
     list-style: none;
 }
 
-/* Navigation Links */
 .nav-item a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease;
 }
 
-/* Hover Effect */
 .nav-item a:hover {
     background-color: var(--secondary-color);
     border-radius: 4px;
-    transform: scale(1.05);
 }
 
-/* Active Page Indicator */
-.nav-item a:focus, 
-.nav-item a:active {
+.nav-title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-right: auto; /* Pushes other items to the right */
+}
+.nav-item a.active {
     border-bottom: 2px solid var(--secondary-color);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-    }
+.container, .rules-container, .scores-container, .game-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-item a {
-        display: block;
-        padding: 10px;
-    }
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+.board {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.grid-cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
 }
