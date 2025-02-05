@@ -22,9 +22,11 @@ Approximately 15 hours total.
 o	(Optional) If you made any assumptions about this assignment, what are they?
 N/A
 
-Picture is credit to:
+Picture is credited to:
 Battleship:
 https://www.usni.org/magazines/naval-history-magazine/2023/june/reflections-battleship-sailor
 Winner:
 https://www.girlontheriver.com/2017/03/17/and-the-winner-is/
+
+
 ![image](https://github.com/user-attachments/assets/4740cccf-f2f8-4e41-bc7d-c93e784fe881)
